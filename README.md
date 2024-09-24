@@ -69,17 +69,17 @@ Based on PYQs, weightage is as follows:
 
 ---
 
-### 2. **Professional Knowledge**
+## 2. **Professional Knowledge**
 
-#### 2.1 Software Development
+### 1 Software Development
 
 - **Data Structures and Algorithms**:
-  - Arrays, Linked List, Stacks, Queues, Binary Tree, Binary Search Tree, Heaps, Hashing, Recursion.
-  - Searching and Sorting Algorithms (Space-Time Complexities).
-  - Tree Traversals: Breadth-First Search (BFS), Depth-First Search (DFS).
+  - Questions based on Arrays, Linked List, Stacks, Queues, Binary Tree, Binary Search Tree, Heaps, Hashing and Recursion.
+  - Searching and Sorting Algorithms along with their Space-Time Complexities.
   
 - **Object-Oriented Programming (OOP) Concepts**:
-  - Abstraction, Encapsulation, Polymorphism, Inheritance, Message Passing.
+  - Abstraction, Association, Encapsulation, Composition, Polymorphism, Aggregation,
+Inheritance, Message Passing.
 
 - **Web/Application Development**:
   - HTML5, CSS, JavaScript.
@@ -87,64 +87,75 @@ Based on PYQs, weightage is as follows:
   - Cookies, Version Control (Git).
 
 - **Software Engineering**:
-  - Software Development Lifecycle (SDLC).
-  - Software Testing: Black Box Testing, White Box Testing, Unit/Integration/Regression Testing.
-  - Design Patterns, SOLID principles.
+  - Software Development Lifecycle Phases (Requirement analysis, In-depth planning, Product design, Coding, Testing, Deployment, Post-production maintenance)
+  - Basic Software Testing Concepts (Black Box Testing, White Box Testing, Unit/Integration/Regression Testing, and UAT).
+  - Design Patterns and SOLID principles
 
 - **Databases**:
-  - Relational DBMS, ER Diagrams, ACID Properties, Keys, Indexes, Normalization, Joins.
+  - Relational DBMS, ER Diagram, Transactions (ACID Properties), Keys (Primary, Foreign, Candidate,
+Alternate etc.), Indexes, Normalization and Joins.
 
-- **Security Concepts**:
-  - OWASP Top 10 Web Security Risks.
-  - Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), SQL Injection, DDoS, Brute Force Attacks.
-  - Public-Private Key Encryption, Digital Signatures.
+- Different types of web application attacks like: Cross-Site Scripting (XSS), Cross-Site Request Forgery(CSRF), Injection Attacks, DDoS (Distributed Denial-of-Service), Brute Force Attack etc.
+  - Tree Traversal strategies like Breadth and Depth First Search
+  - Questions based on Data Structures with code snippets
+  - Digital Signatures use case and importance
+  - Public-Private Key Encryption Symmetric and Asymmetric Keys
+  - Digital Signatures use case and importance
+  - Public-Private Key Encryption
+  - OWASP 10 Web-Security Risks
+  - Database related question based on:
+  - DDL, DML and TCL commands
+  - Basic of SQL Functions
+  - Views, Triggers and Cursors
+  - Monolith vs Microservice architecture
 
----
+### 2. Infra Support
 
-#### 2.2 Infra Support
+- Basics of Operating Systems:
+  - System calls, processes, threads, inter‐process communication, concurrency and synchronization. Deadlock. Memory management and virtual memory.
+  - CPU scheduling Algorithms (FCFS, SJF, SRTF, Round Robin etc.).
+  - Types of memories: cache, main memory and secondary storage.
+  - Concept of Paging and Page Replacement Algorithms: (FIFO, Optimal page replacement, LRU etc.)
+  - I/O Scheduling algorithms (FCFS, SSTF, SCAN, LOOK, CSCAN, CLOOK etc.)
+- Basics of virtual machines, storage solutions, and networking components.
+- Infra related concepts like processors, Clock Cycle, Cache Memory, HDD, SSD etc.
+- Backup and Recovery practices
+- Best practices pertaining to security and compliance controls.
+- Windows and Unix/Linux computing environments.
 
-- **Operating Systems**:
-  - System calls, processes, threads, deadlocks, concurrency, synchronization.
-  - Memory Management: Paging, Virtual Memory, Page Replacement Algorithms (LRU, FIFO).
-  - CPU Scheduling Algorithms (FCFS, Round Robin, SJF).
-  - I/O Scheduling Algorithms (FCFS, SSTF, SCAN, C-LOOK).
+### 3. Networking
 
-- **Infrastructure**:
-  - Virtual Machines, Storage Solutions (HDD, SSD).
-  - Backup and Recovery Practices.
-  - Windows and Linux/Unix environments.
-  - Best practices for security and compliance controls.
+- Types of Networks (LAN, WAN, MAN etc)
+- Network Topologies (Ring , Mesh, Bus, Star, etc)
+- Network Devices (Hub, Bridge, Routers, Gateway, etc)
+- OSI Data Model, TCP/IP Model
+- Subnets and Supernets
+- UDP, TCP, sockets and ports.
+- IPv4 vs IPv6
+- Classless inter-domain routing.
+- IP support protocols (ARP, DHCP, ICMP), Network Address Translation (NAT)
+- Application layer protocols: DNS, SMTP, HTTP, FTP, etc.
+- Internet Application Protocols (FTP, Telnet, SMTP, SNMP, POP3 etc).
+- Different types of Network Security Protections:
+  - Firewall, Access Control, Remote Access VPN
+  - Types of Firewall
+  - Access Control
 
----
+### 4. Cloud
 
-#### 2.3 Networking
-
-- **Network Types and Topologies**:
-  - LAN, WAN, MAN, Ring, Mesh, Bus, Star.
-
-- **Network Devices**:
-  - Hub, Bridge, Router, Gateway.
-
-- **Protocols**:
-  - OSI Model, TCP/IP, IPv4, IPv6.
-  - Subnets and Supernets, Network Address Translation (NAT).
-  - IP Support Protocols (ARP, DHCP, ICMP), Internet Protocols (HTTP, FTP, SMTP).
-
-- **Network Security**:
-  - Firewalls, Access Control, VPN (Remote Access), Types of Firewalls.
-
----
-
-#### 2.4 Cloud Operations
-
-- **Cloud Computing**:
-  - Cloud Computing Characteristics, Virtualization, Containerization (Docker).
-  - Types of Cloud Services: SaaS, PaaS, IaaS.
-  - Public vs Private Clouds, Server-based vs Hypervisor-based Virtualization.
-
-- **Continuous Integration/Continuous Delivery (CI/CD)**:
-  - Automated Software Development Pipelines.
-  - Virtual Machines vs Containers, Parallel Computing vs Cloud Computing.
+- Cloud Computing
+- Characteristics of Cloud computing
+- Types of Cloud Services (SAAS, PAAS, IAAS)
+- Public vs Private Cloud
+- Virtualization
+- Distributed Parallel vs Cloud Computing
+- Containerization
+- Types of Virtualization:
+  - Server-based vs Hypervisor-based virtualization
+  - Type 1 vs Type 2 virtualization
+  - Full vs Para virtualization
+- Virtual Machines vs Containers
+- Continuous Integration and Continuous Delivery (CI/CD)
 
 ---
 
