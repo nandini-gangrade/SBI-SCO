@@ -239,3 +239,506 @@ Object-Oriented Programming (OOP) is a paradigm centered on the concept of "obje
    
       **Answer**: b) Calling methods on an object
 ```
+
+<br>
+
+---
+
+<br>
+
+Sure! Below, you'll find detailed explanations of key Object-Oriented Programming (OOP) concepts: Abstraction, Association, Encapsulation, Composition, Polymorphism, Aggregation, Inheritance, and Message Passing. Each explanation includes examples in C++, Java, and Python, along with diagrams to help visualize these concepts.
+
+## 1. Abstraction
+
+### Definition:
+Abstraction is the concept of hiding the complex implementation details and exposing only the necessary features of an object. This simplifies interaction with objects and makes code easier to maintain and understand.
+
+### Key Points:
+- Focus on essential characteristics.
+- Use abstract classes and interfaces to achieve abstraction.
+
+### Examples:
+- **C++:**
+  ```cpp
+  class Shape {
+  public:
+      virtual void draw() = 0; // Pure virtual function
+  };
+
+  class Circle : public Shape {
+  public:
+      void draw() override {
+          cout << "Drawing Circle" << endl;
+      }
+  };
+  ```
+
+- **Java:**
+  ```java
+  abstract class Shape {
+      abstract void draw();
+  }
+
+  class Circle extends Shape {
+      void draw() {
+          System.out.println("Drawing Circle");
+      }
+  }
+  ```
+
+- **Python:**
+  ```python
+  from abc import ABC, abstractmethod
+
+  class Shape(ABC):
+      @abstractmethod
+      def draw(self):
+          pass
+
+  class Circle(Shape):
+      def draw(self):
+          print("Drawing Circle")
+  ```
+
+### Diagram:
+```
+ +----------------+
+ |    Shape       |
+ |----------------|
+ | + draw()       |
+ +----------------+
+          |
+          |
+ +----------------+
+ |    Circle      |
+ |----------------|
+ | + draw()       |
+ +----------------+
+```
+
+---
+
+## 2. Association
+
+### Definition:
+Association represents a relationship between two objects where both can exist independently. It describes how one object interacts with another.
+
+### Key Points:
+- Types of association: one-to-one, one-to-many, many-to-one, many-to-many.
+- Does not imply ownership.
+
+### Examples:
+- **C++:**
+  ```cpp
+  class Driver {
+      // Driver properties
+  };
+
+  class Car {
+      Driver* driver; // Association with Driver
+  };
+  ```
+
+- **Java:**
+  ```java
+  class Driver {
+      // Driver properties
+  }
+
+  class Car {
+      Driver driver; // Association with Driver
+  }
+  ```
+
+- **Python:**
+  ```python
+  class Driver:
+      pass
+
+  class Car:
+      def __init__(self, driver):
+          self.driver = driver  # Association with Driver
+  ```
+
+### Diagram:
+```
++---------+      +---------+
+|  Driver |      |   Car   |
++---------+      +---------+
+```
+
+---
+
+## 3. Encapsulation
+
+### Definition:
+Encapsulation is the bundling of data (attributes) and methods (functions) that operate on the data into a single unit or class. It restricts direct access to some of an object's components, which is a means of preventing accidental interference.
+
+### Key Points:
+- Use access modifiers (private, protected, public).
+- Enhances security and reduces complexity.
+
+### Examples:
+- **C++:**
+  ```cpp
+  class Account {
+  private:
+      double balance; // Private data
+
+  public:
+      void deposit(double amount) {
+          balance += amount; // Public method
+      }
+  };
+  ```
+
+- **Java:**
+  ```java
+  class Account {
+      private double balance; // Private data
+
+      public void deposit(double amount) {
+          balance += amount; // Public method
+      }
+  }
+  ```
+
+- **Python:**
+  ```python
+  class Account:
+      def __init__(self):
+          self.__balance = 0  # Private attribute
+
+      def deposit(self, amount):
+          self.__balance += amount  # Public method
+  ```
+
+### Diagram:
+```
++--------------------+
+|      Account       |
+|--------------------|
+| - balance          |  (private)
+|--------------------|
+| + deposit(amount)  |  (public)
++--------------------+
+```
+
+---
+
+## 4. Composition
+
+### Definition:
+Composition is a strong form of association where one class contains references to one or more objects of another class. The lifetime of the contained objects is tied to the lifetime of the container object.
+
+### Key Points:
+- Strong ownership relationship.
+- Contained objects cannot exist without the container.
+
+### Examples:
+- **C++:**
+  ```cpp
+  class Engine {
+      // Engine properties
+  };
+
+  class Car {
+  private:
+      Engine engine; // Composition
+  };
+  ```
+
+- **Java:**
+  ```java
+  class Engine {
+      // Engine properties
+  }
+
+  class Car {
+      private Engine engine; // Composition
+  }
+  ```
+
+- **Python:**
+  ```python
+  class Engine:
+      pass
+
+  class Car:
+      def __init__(self):
+          self.engine = Engine()  # Composition
+  ```
+
+### Diagram:
+```
++-------+
+|  Car  |<--- contains
++-------+
+| - engine |
++-------+
+```
+
+---
+
+## 5. Polymorphism
+
+### Definition:
+Polymorphism allows objects to be treated as instances of their parent class. It enables a single interface to represent different underlying data types.
+
+### Key Points:
+- Achieved through method overriding and overloading.
+- Enhances flexibility and maintainability.
+
+### Examples:
+- **C++:**
+  ```cpp
+  class Shape {
+  public:
+      virtual void draw() { cout << "Drawing Shape" << endl; }
+  };
+
+  class Circle : public Shape {
+  public:
+      void draw() override { cout << "Drawing Circle" << endl; }
+  };
+  ```
+
+- **Java:**
+  ```java
+  class Shape {
+      void draw() {
+          System.out.println("Drawing Shape");
+      }
+  }
+
+  class Circle extends Shape {
+      void draw() {
+          System.out.println("Drawing Circle");
+      }
+  }
+  ```
+
+- **Python:**
+  ```python
+  class Shape:
+      def draw(self):
+          print("Drawing Shape")
+
+  class Circle(Shape):
+      def draw(self):
+          print("Drawing Circle")
+  ```
+
+### Diagram:
+```
+          +-------------+
+          |    Shape    |
+          |-------------|
+          | + draw()    |
+          +-------------+
+                 |
+                 |
+          +-------------+
+          |   Circle    |
+          |-------------|
+          | + draw()    |
+          +-------------+
+```
+
+---
+
+## 6. Aggregation
+
+### Definition:
+Aggregation is a special form of association that represents a "whole-part" relationship where the part can exist independently of the whole. It shows that one class can contain references to objects of another class.
+
+### Key Points:
+- Weaker relationship than composition.
+- Parts can exist independently.
+
+### Examples:
+- **C++:**
+  ```cpp
+  class Department {
+      // Department properties
+  };
+
+  class Company {
+      Department* department; // Aggregation
+  };
+  ```
+
+- **Java:**
+  ```java
+  class Department {
+      // Department properties
+  }
+
+  class Company {
+      Department department; // Aggregation
+  }
+  ```
+
+- **Python:**
+  ```python
+  class Department:
+      pass
+
+  class Company:
+      def __init__(self, department):
+          self.department = department  # Aggregation
+  ```
+
+### Diagram:
+```
++-----------+      +-----------+
+| Department|      |  Company  |
++-----------+      +-----------+
+```
+
+---
+
+## 7. Inheritance
+
+### Definition:
+Inheritance is the mechanism by which one class (child or subclass) can inherit properties and behaviors (methods) from another class (parent or superclass). It promotes code reuse and establishes a relationship between classes.
+
+### Key Points:
+- Types: single, multiple, multi-level, hierarchical, and hybrid inheritance.
+- Supports method overriding.
+
+### Examples:
+- **C++:**
+  ```cpp
+  class Animal {
+  public:
+      void speak() { cout << "Animal speaks" << endl; }
+  };
+
+  class Dog : public Animal {
+  public:
+      void speak() { cout << "Dog barks" << endl; }
+  };
+  ```
+
+- **Java:**
+  ```java
+  class Animal {
+      void speak() {
+          System.out.println("Animal speaks");
+      }
+  }
+
+  class Dog extends Animal {
+      void speak() {
+          System.out.println("Dog barks");
+      }
+  }
+  ```
+
+- **Python:**
+  ```python
+  class Animal:
+      def speak(self):
+          print("Animal speaks")
+
+  class Dog(Animal):
+      def speak(self):
+          print("Dog barks")
+  ```
+
+### Diagram:
+```
+         +-----------+
+         |  Animal   |
+         +-----------+
+         | + speak()  |
+         +-----------+
+                |
+                |
+         +-----------+
+         |    Dog    |
+         +-----------+
+         | + speak()  |
+         +-----------+
+```
+
+---
+
+## 8. Message Passing
+
+### Definition:
+Message passing is the process by which objects communicate with each other by sending and receiving messages (method calls). It is a fundamental way for objects to interact in OOP.
+
+### Key Points:
+- Encapsulates object communication.
+- Encourages loose coupling between objects.
+
+### Examples:
+- **C++:**
+  ```cpp
+  class Car {
+  public:
+      void start() {
+          cout << "Car started" << endl;
+      }
+  };
+
+  class Driver {
+      void drive(Car& car) {
+          car.start(); // Message passing
+      }
+  };
+  ```
+
+- **Java:**
+  ```java
+  class Car {
+      void start() {
+          System.out.println("Car started");
+      }
+  }
+
+
+
+  class Driver {
+      void drive(Car car) {
+          car.start(); // Message passing
+      }
+  }
+  ```
+
+- **Python:**
+  ```python
+  class Car:
+      def start(self):
+          print("Car started")
+
+  class Driver:
+      def drive(self, car):
+          car.start()  # Message passing
+  ```
+
+### Diagram:
+```
++----------+         +---------+
+|   Car    |         | Driver  |
++----------+         +---------+
+| + start()|         | + drive()|
++----------+         +---------+
+        |-------------------|
+                 Message
+```
+
+---
+
+### Conclusion
+
+These OOP concepts form the foundation of modern programming and are essential for exam preparation, especially for SBI SCO roles. Make sure to understand each concept thoroughly, as they often appear in various forms during technical interviews and assessments.
+
+#### Tips for Exam Preparation:
+- Understand the differences between related concepts (e.g., composition vs. aggregation).
+- Practice coding examples to reinforce your understanding.
+- Review the diagrams and examples regularly to aid memory retention.
+
+If you need further details or specific questions related to SBI SCO, feel free to ask!
