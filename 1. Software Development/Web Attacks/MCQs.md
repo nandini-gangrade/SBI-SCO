@@ -595,3 +595,325 @@ c) To disable third-party services
 d) To enhance server performance  
 **Answer:** b) To restrict where resources can be loaded from  
 **Explanation:** CSP limits sources from which content can be loaded, helping prevent XSS and data injection attacks. 
+
+---
+
+---
+
+#### **1. What is the primary purpose of a digital signature?**  
+a. Encrypting data  
+b. Authenticating the identity of the sender  
+c. Storing passwords securely  
+d. Transmitting data faster  
+
+**Answer**: b. Authenticating the identity of the sender  
+**Explanation**: Digital signatures verify that the sender is genuine and the message is not altered.
+
+---
+
+#### **2. In asymmetric encryption, what is the private key used for?**  
+a. Encrypting data  
+b. Decrypting data  
+c. Signing digital signatures  
+d. Both b and c  
+
+**Answer**: d. Both b and c  
+**Explanation**: The private key decrypts data encrypted with the public key and creates digital signatures.
+
+---
+
+#### **3. Which of the following is an example of symmetric key encryption?**  
+a. RSA  
+b. AES  
+c. Diffie-Hellman  
+d. DSA  
+
+**Answer**: b. AES  
+**Explanation**: AES (Advanced Encryption Standard) is a symmetric encryption algorithm.
+
+---
+
+#### **4. What is non-repudiation in digital security?**  
+a. Preventing unauthorized access  
+b. Ensuring data is not altered  
+c. Preventing denial of actions by the sender  
+d. Ensuring data confidentiality  
+
+**Answer**: c. Preventing denial of actions by the sender  
+**Explanation**: Non-repudiation ensures the sender cannot deny sending a message.
+
+---
+
+#### **5. In the OWASP Top 10, what does SSRF stand for?**  
+a. Secure Server Response Function  
+b. Server-Side Request Forgery  
+c. Simple Server Resource Failures  
+d. Secure System Resource Framework  
+
+**Answer**: b. Server-Side Request Forgery  
+**Explanation**: SSRF occurs when an attacker tricks a server into making unintended requests.
+
+---
+
+#### **6. Which key is shared in asymmetric encryption?**  
+a. Private key  
+b. Symmetric key  
+c. Public key  
+d. None of the above  
+
+**Answer**: c. Public key  
+**Explanation**: In asymmetric encryption, the public key is openly shared while the private key is kept secret.
+
+---
+
+#### **7. Which attack is mitigated by using parameterized queries?**  
+a. Cross-Site Scripting (XSS)  
+b. SQL Injection  
+c. DDoS  
+d. Brute Force  
+
+**Answer**: b. SQL Injection  
+**Explanation**: Parameterized queries prevent malicious SQL code from executing.
+
+---
+
+#### **8. What is the recommended length for secure symmetric keys?**  
+a. 64 bits  
+b. 128 bits  
+c. 256 bits  
+d. 512 bits  
+
+**Answer**: c. 256 bits  
+**Explanation**: A 256-bit key provides strong security for symmetric encryption.
+
+---
+
+#### **9. What does AES stand for?**  
+a. Advanced Encryption Standard  
+b. Asymmetric Encryption Scheme  
+c. Advanced Encoding System  
+d. Automated Encryption Standard  
+
+**Answer**: a. Advanced Encryption Standard  
+**Explanation**: AES is a widely used symmetric encryption algorithm.
+
+---
+
+#### **10. Which of the following ensures data integrity?**  
+a. Encryption  
+b. Digital Signature  
+c. Decryption  
+d. Public Key  
+
+**Answer**: b. Digital Signature  
+**Explanation**: Digital signatures ensure the data has not been tampered with.
+
+---
+
+#### **11. What is the main weakness of symmetric encryption?**  
+a. Complexity of algorithms  
+b. Need for secure key sharing  
+c. Slow processing speed  
+d. Incompatibility with digital signatures  
+
+**Answer**: b. Need for secure key sharing  
+**Explanation**: The secret key must be securely shared, which can be a challenge.
+
+---
+
+#### **12. Which OWASP risk involves weak or missing encryption?**  
+a. Injection  
+b. Cryptographic Failures  
+c. Insecure Design  
+d. Security Misconfiguration  
+
+**Answer**: b. Cryptographic Failures  
+**Explanation**: Cryptographic Failures relate to sensitive data exposure due to poor encryption.
+
+---
+
+#### **13. What does RSA stand for in encryption?**  
+a. Rivest-Shamir-Adleman  
+b. Reliable Secure Algorithm  
+c. Random Secure Algorithm  
+d. Robust Security Application  
+
+**Answer**: a. Rivest-Shamir-Adleman  
+**Explanation**: RSA is an asymmetric encryption algorithm named after its inventors.
+
+---
+
+#### **14. What type of attack does CSP (Content Security Policy) mitigate?**  
+a. Brute Force  
+b. Cross-Site Scripting (XSS)  
+c. DDoS  
+d. SQL Injection  
+
+**Answer**: b. Cross-Site Scripting (XSS)  
+**Explanation**: CSP restricts the sources from which scripts can be executed.
+
+---
+
+#### **15. In digital communication, a hash function is primarily used for?**  
+a. Encrypting data  
+b. Ensuring data integrity  
+c. Generating private keys  
+d. Compressing files  
+
+**Answer**: b. Ensuring data integrity  
+**Explanation**: Hash functions verify that data has not been altered.
+
+---
+
+#### **16. Which OWASP risk involves improper access to resources?**  
+a. Injection  
+b. Broken Access Control  
+c. SSRF  
+d. Security Misconfiguration  
+
+**Answer**: b. Broken Access Control  
+**Explanation**: Broken Access Control occurs when attackers gain unauthorized access.
+
+---
+
+#### **17. What does OWASP stand for?**  
+a. Open Web Application Security Project  
+b. Online Web Application Security Program  
+c. Official Website Application Security Protocol  
+d. Open Web Access System Program  
+
+**Answer**: a. Open Web Application Security Project  
+
+---
+
+#### **18. What is the role of a private key in digital signatures?**  
+a. Encrypting the signature  
+b. Decrypting the signature  
+c. Verifying the signature  
+d. Encrypting the public key  
+
+**Answer**: a. Encrypting the signature  
+
+---
+
+#### **19. Which protocol ensures secure email transmission?**  
+a. SMTP  
+b. SNMP  
+c. HTTPS  
+d. TLS  
+
+**Answer**: d. TLS  
+**Explanation**: TLS provides encryption for secure email communication.
+
+---
+
+#### **20. Which encryption type is commonly used for HTTPS?**  
+a. Symmetric  
+b. Asymmetric  
+c. Both a and b  
+d. None of the above  
+
+**Answer**: c. Both a and b  
+**Explanation**: HTTPS uses asymmetric encryption for key exchange and symmetric encryption for data transfer.
+
+---
+
+#### **21. What is the OWASP Top 10's main goal?**  
+a. Provide encryption algorithms  
+b. List critical web application risks  
+c. Define software development standards  
+d. Create digital signature guidelines  
+
+**Answer**: b. List critical web application risks  
+
+---
+
+#### **22. What is the purpose of a hash in digital signatures?**  
+a. Encrypt data  
+b. Compress files  
+c. Generate a unique identifier for data  
+d. Store passwords  
+
+**Answer**: c. Generate a unique identifier for data  
+
+---
+
+#### **23. Which OWASP risk involves using outdated libraries?**  
+a. Insecure Design  
+b. Security Misconfiguration  
+c. Vulnerable and Outdated Components  
+d. SSRF  
+
+**Answer**: c. Vulnerable and Outdated Components  
+
+---
+
+#### **24. What is the key feature of asymmetric encryption?**  
+a. Shared key for encryption and decryption  
+b. Separate keys for encryption and decryption  
+c. Faster processing  
+d. Lower security  
+
+**Answer**: b. Separate keys for encryption and decryption  
+
+---
+
+#### **25. What does HTTPS use to ensure secure communication?**  
+a. Symmetric encryption only  
+b. Asymmetric encryption only  
+c. Both symmetric and asymmetric encryption  
+d. No encryption  
+
+**Answer**: c. Both symmetric and asymmetric encryption  
+
+---
+
+#### **26. What ensures non-repudiation in a digital transaction?**  
+a. Public key  
+b. Private key  
+c. Digital signature  
+d. Hash function  
+
+**Answer**: c. Digital signature  
+
+---
+
+#### **27. Which attack does multi-factor authentication (MFA) mitigate?**  
+a. SQL Injection  
+b. Brute Force  
+c. DDoS  
+d. SSRF  
+
+**Answer**: b. Brute Force  
+
+---
+
+#### **28. In asymmetric encryption, what is used to verify a digital signature?**  
+a. Public key  
+b. Private key  
+c. Symmetric key  
+d. Session key  
+
+**Answer**: a. Public key  
+
+---
+
+#### **29. Which OWASP risk involves insecure default configurations?**  
+a. Injection  
+b. Security Misconfiguration  
+c. Cryptographic Failures  
+d. Broken Access Control  
+
+**Answer**: b. Security Misconfiguration  
+
+---
+
+#### **30. What is a common result of injection attacks?**  
+a. Unauthorized data access  
+b. Service unavailability  
+c. Slow network performance  
+d. Session expiration  
+
+**Answer**: a. Unauthorized data access  
+
+--- 
